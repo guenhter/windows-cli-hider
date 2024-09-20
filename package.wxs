@@ -1,0 +1,19 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+    <Package Name="Windows CLI Hider" Manufacturer="Grill Günther" UpgradeCode="872c3b2b-4fe7-4c3a-8c47-2c356aa58983" Version="0.1.0">
+        <Icon Id="icon.ico" SourceFile="resources\icon.ico"/>
+        <Property Id="ARPPRODUCTICON" Value="icon.ico" />
+        <Property Id="ARPNOMODIFY" Value="no" Secure="yes" />
+
+        <MediaTemplate EmbedCab="yes" />
+
+        <StandardDirectory Id="ProgramFiles64Folder">
+            <Directory Id="WindowsCliHider" Name="Windows CLI Hider" />
+        </StandardDirectory>
+
+        <Feature Id="Main">
+            <Component Directory="WindowsCliHider" Guid="ef88aca5-ca0f-49b3-a95b-385d7c9a2965">
+                <File Source="target\\release\\windows-cli-hider.exe" />
+            </Component>
+        </Feature>
+    </Package>
+</Wix>

@@ -1,0 +1,7 @@
+target/
+.vscode/
+.wix/
+
+*.log
+*.msi
+*.wixpdb
