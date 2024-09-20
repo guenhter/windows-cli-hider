@@ -6,14 +6,14 @@ Hides the CLI window of non UI applications.
 
 
 ```cmd
-%ProgramFiles%\WindowsCliHider\WindowsCliHider.exe SCRIPT_NAME [PARAMETERS]
+"%ProgramFiles%\Windows CLI Hider\windows-cli-hider.exe" SCRIPT_NAME [PARAMETERS]
 ```
 
 
 Example:
 
 ```cmd
-%ProgramFiles%\WindowsCliHider\WindowsCliHider.exe some-script.bat param1 param2
+"%ProgramFiles%\Windows CLI Hider\windows-cli-hider.exe" some-script.bat param1 param2
 ```
 
 
